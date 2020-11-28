@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+
+<html>
+ <head>
+ <title> Ignition </title>
+ <link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
+ <link rel="stylesheet" type="text/css" href="landscape.css" media="screen and (orientation:landscape)"/>
+ <meta name="viewport" content="width=device-width,user-scalable=no"/>
+
+ </head>
+
+ <body>
+   <!-- HTML5 article tag for content -->
+   <header> Add a Goal </header>
+
+  <div style="text-align:center">
+    <form class="taskform" action="goals.html">
+      <textarea id="description" autofocus=on rows=5 required>I will</textarea>
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+      <label for="completion"> I will complete this by: </label>
+      <input type="date" id="completion" required>
+
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+      <input type="button" value="Add a Checkpoint" required>
+
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+      <label for="poc" style="display: block;"> Proof of Completion: </label>
+      <select name="poc" id="poc" required>
+        <option>Text</option>
+        <option>Video</option> 
+        <option>Audio</option>
+        <option>None</option>
+      </select><br>
+      
+      <label for="verification" style="display: block;"> Human Verification: </label>
+      <select name="verification" id="verification" required>
+        <option>Yes</option>
+        <option>No</option> 
+        <option>Decide Later</option>
+      </select><br>
+
+      <label for="collateral" style="display: block;"> Collateral: </label>
+      <input type="number" name="collateral" id="collateral" min="0" required>
+
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray;margin:30px;">
+
+      <input type="submit" value="Add Goal" class="gobutton" style='
+                      position: unset;
+                      width: 200px;
+                      padding-bottom: 0;
+                      border-radius: 10%;
+                      padding: 20px 20px;
+                      font: bold 30px "Lucidia Console", sans-serif;
+                   '>
+    </form>
+  </div>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="#goals">Goals</a>
+    <a href="#account">Account</a>
+    <a href="#back">Back</a>
+  </div> 
+ </body>
+</html>
