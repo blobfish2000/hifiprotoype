@@ -8,7 +8,7 @@ C9F0FF
  */
 
 body {
-  background-color: #E5C3D1;
+  background-color: #DD3417;
   font: 15px "Lucidia Console", sans-serif;
   padding: 5px;
 }
@@ -20,16 +20,58 @@ header {
   border-style: none none solid none;
 }
 
+.tasks {
+  display: grid;
+  grid-template-columns: 20% 1% 79%;
+  background-color: grey;
+  border-style: none none solid none;
+}
+
+.tasks > div:nth-child(6n+1),
+.tasks > div:nth-child(6n+3) {
+  background-color: #c9f0ff;
+}
+.tasks > div:nth-child(6n+4),
+.tasks > div:nth-child(6n+6) {
+  background-color: #7d82bb;
+}
+
+.time, .task {
+  font: bold 15px "Lucidia Console", sans-serif;
+  padding: 5px;
+  border-style: none solid none none;
+}
+
+.task {
+  border-style: none none none solid;
+}
 
 .taskform {
   padding: 10px;
   position: absolute;
   left: 50%;
   transform:translate(-50%);
+  background-color: #f9cb40;
+  width: 70%;
+  border-radius: 20px;
+  padding: 20px;
+}:
+
+option {
+  background-color: #7d82bb;
 }
 
+#collateral, #checkpoint, #poc, #verification, #completion, #description {
+  background: transparent;
+}
+
+#taskdiv {
+  text-align: center;
+}
+
+
 label {
-  padding: 5px;
+  padding: 20px;
   display: inline-block;
 }
 
@@ -43,17 +85,17 @@ textarea{
   left: 25%;
   width: 50%;
   padding-bottom: 50%;
-  background-color: #DD3417;
+  background-color: #613f75;
   text-align: center;
   border: 5px solid black;
   border-radius: 50%;
 
-  box-shadow: 5px 5px grey;
+  box-shadow: 5px 5px #101010;
 
 }
 
 .gobutton > div {
-  font: bold 30px "Lucidia Console", sans-serif;
+  font: bold 40px "Lucidia Console", sans-serif;
   color: black;
   position: absolute;
   top: 50%;

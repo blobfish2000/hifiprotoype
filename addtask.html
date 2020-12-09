@@ -13,8 +13,9 @@
  <body>
    <!-- HTML5 article tag for content -->
    <header> Add a Goal </header>
+   <div id="spacer">
 
-  <div style="text-align:center">
+  <div id="taskdiv">
     <form class="taskform" action="goals.html">
       <textarea id="description" autofocus=on rows=5 required>I will</textarea>
       <hr style="height:2px;border-width:0;color:gray;background-color:gray">
@@ -24,7 +25,7 @@
 
       <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
-      <input type="button" value="Add a Checkpoint" required>
+      <input id="checkpoint" type="button" value="Add a Checkpoint" required>
 
       <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
@@ -61,7 +62,7 @@
 
   <div class="navbar">
     <a href="index.html">Home</a>
-    <a href="#goals">Goals</a>
+    <a href="goals.html">Goals</a>
     <a href="#account">Account</a>
     <a href="#back">Back</a>
   </div> 
